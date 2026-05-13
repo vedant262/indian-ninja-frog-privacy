@@ -3,61 +3,305 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - Indian Ninja Frog</title>
-
+<title>Privacy Policy – Indian Ninja Frog: 99% Fail by Dragoster Studios</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    line-height: 1.7;
-    color: #222;
-}
-h1 { color: #2c3e50; text-align: center; }
-h2 { color: #34495e; margin-top: 30px; }
-</style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap');
+  :root {
+    --ink: #1a1a2e;
+    --muted: #5a5a7a;
+    --accent: #059669;
+    --accent2: #047857;
+    --bg: #f0fdf4;
+    --card: #ffffff;
+    --border: #d1fae5;
+    --yes: #059669;
+    --no: #dc2626;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  .hero {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%);
+    padding: 60px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '🐸';
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.05;
+    top: -30px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(5,150,105,0.25);
+    border: 1px solid rgba(5,150,105,0.5);
+    color: #6ee7b7;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(26px, 4.5vw, 44px);
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .hero p { color: #a7f3d0; font-size: 15px; font-weight: 300; }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 16px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .summary-card .icon { font-size: 28px; margin-bottom: 8px; }
+  .summary-card .label { font-size: 12px; color: var(--muted); font-weight: 500; line-height: 1.4; }
+  .summary-card .val {
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 6px;
+    padding: 3px 8px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  .val.no-val { background: #fef2f2; color: var(--no); }
+  .val.yes-val { background: #f0fdf4; color: var(--yes); }
 
+  .section { margin-bottom: 36px; }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--ink);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .num {
+    background: var(--accent);
+    color: white;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .section p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .section a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .section a:hover { text-decoration: underline; }
+
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .pill {
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .pill.red { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+  .pill.green { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+
+  .highlight {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    border: 1px solid #6ee7b7;
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 20px 0;
+  }
+  .highlight p { color: #064e3b; margin: 0; font-size: 15px; }
+
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .contact-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .contact-box h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+  .contact-box p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0; }
+  .contact-box a { color: var(--accent); text-decoration: none; font-weight: 500; }
+
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .footer strong { color: var(--ink); }
+</style>
 </head>
 <body>
 
-<h1>Privacy Policy for Indian Ninja Frog</h1>
+<div class="hero">
+  <div class="badge">PRIVACY POLICY</div>
+  <h1>Indian Ninja Frog: 99% Fail<br>by Dragoster Studios</h1>
+  <p>Effective Date: May 13, 2026 &nbsp;·&nbsp; Last Updated: May 13, 2026</p>
+</div>
 
-<p><strong>Effective Date:</strong> May, 2026</p>
+<div class="wrap">
 
-<h2>Introduction</h2>
-<p>This privacy policy applies to the Indian Ninja Frog mobile game application.</p>
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="icon">📊</div>
+      <div class="label">Data Collection</div>
+      <div class="val no-val">None</div>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🔐</div>
+      <div class="label">Login / Account</div>
+      <div class="val no-val">Not Required</div>
+    </div>
+    <div class="summary-card">
+      <div class="icon">📢</div>
+      <div class="label">Advertisements</div>
+      <div class="val no-val">No Ads</div>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🆔</div>
+      <div class="label">Advertising ID</div>
+      <div class="val no-val">Not Used</div>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🌐</div>
+      <div class="label">Internet Access</div>
+      <div class="val no-val">Not Required</div>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🆓</div>
+      <div class="label">Free to Play</div>
+      <div class="val yes-val">100% Free</div>
+    </div>
+  </div>
 
-<h2>Data Collection</h2>
-<p>Indian Ninja Frog does not require account creation or personal information to use the app.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">1</span> Introduction</div>
+    <p>This Privacy Policy describes how Dragoster Studios ("we", "us", or "our") handles information in connection with the <strong>Indian Ninja Frog: 99% Fail</strong> mobile game application ("the App") available on Google Play.</p>
+    <p>We built this App with complete respect for your privacy. The App does not collect, store, transmit, or share any personal information whatsoever.</p>
+    <div class="highlight">
+      <p>🛡️ <strong>Short version:</strong> We collect absolutely nothing. No data leaves your device. No accounts. No ads. No tracking. No internet required. The game works entirely on your device.</p>
+    </div>
+  </div>
 
-<p>We do not directly collect or store personal data.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">2</span> Data Collection</div>
+    <p>Indian Ninja Frog: 99% Fail does not require account creation or any personal information to play. We do not directly collect, store, or process any personal data of any kind.</p>
+    <p>The App is designed to function completely offline and does not require an internet connection for any part of the gameplay experience.</p>
+    <div class="pill-row">
+      <span class="pill red">✕ No personal information</span>
+      <span class="pill red">✕ No email addresses</span>
+      <span class="pill red">✕ No device identifiers</span>
+      <span class="pill red">✕ No Advertising ID</span>
+      <span class="pill red">✕ No location data</span>
+      <span class="pill red">✕ No usage analytics</span>
+      <span class="pill red">✕ No crash reports sent</span>
+      <span class="pill red">✕ No purchase tracking</span>
+    </div>
+  </div>
 
-<p>The app is designed to function offline and does not require an internet connection for core gameplay.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">3</span> Third-Party Services</div>
+    <p>This App does not use any third-party services such as advertising networks, analytics platforms, crash reporting tools, or data tracking services of any kind.</p>
+    <p>There are no connections to external servers and no data is transmitted to us or any third party at any time.</p>
+    <div class="pill-row">
+      <span class="pill red">✕ No AdMob</span>
+      <span class="pill red">✕ No Google Analytics</span>
+      <span class="pill red">✕ No Firebase</span>
+      <span class="pill red">✕ No Facebook SDK</span>
+      <span class="pill red">✕ No third-party SDKs</span>
+    </div>
+  </div>
 
-<h2>Third-Party Services</h2>
-<p>This app does not intentionally use third-party services such as advertising networks, analytics, or data tracking tools.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">4</span> Advertisements</div>
+    <p>Indian Ninja Frog: 99% Fail contains absolutely no advertisements of any kind. There are no banner ads, video ads, interstitial ads, rewarded ads, or any other form of advertising anywhere in the App.</p>
+    <p>We do not use the Google Advertising ID (com.google.android.gms.permission.AD_ID) or any equivalent identifier. This permission is not declared or used in our application.</p>
+  </div>
 
-<h2>Children's Privacy</h2>
-<p>This app is suitable for a general audience, including children.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">5</span> Children's Privacy</div>
+    <p>This App is suitable for a general audience including children of all ages. Since we do not collect any personal information from anyone, there is no risk to children's privacy.</p>
+    <p>The App fully complies with the Children's Online Privacy Protection Act (COPPA) and Google Play's Families Policy. We do not knowingly collect personal data from children or users of any age.</p>
+    <p>If you believe that any information has been collected unintentionally, please contact us so we can take appropriate action immediately.</p>
+  </div>
 
-<p>We do not knowingly collect personal data from children or users of any age.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">6</span> Data Security</div>
+    <p>Since we do not collect or store any personal data, there is no user data stored or processed by us on any server. Any game progress or settings are saved locally on your device only and are never transmitted anywhere.</p>
+  </div>
 
-<p>If you believe that any information has been collected unintentionally, please contact us so we can take appropriate action.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">7</span> Changes to This Policy</div>
+    <p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+  </div>
 
-<h2>Data Security</h2>
-<p>Since we do not collect personal data, there is no user data stored or processed by us.</p>
+  <div class="section">
+    <div class="section-title"><span class="num">8</span> Contact Us</div>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+    <div class="contact-box">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <h4>Dragoster Studios</h4>
+        <p>
+          📧 Email: <a href="mailto:rajputvedant52@gmail.com">rajputvedant52@gmail.com</a><br>
+          📸 Instagram: <a href="https://instagram.com/DragosterStudios" target="_blank">@DragosterStudios</a><br>
+          🎮 Google Play: <a href="https://play.google.com/store/apps/developer?id=Dragoster+Studios" target="_blank">Dragoster Studios on Play Store</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<h2>Changes to This Policy</h2>
-<p>This privacy policy may be updated from time to time. Any changes will be posted on this page with an updated effective date.</p>
+</div>
 
-<h2>Contact Us</h2>
-<p>If you have any questions, please contact:</p>
-
-<p><strong>Email:</strong> rajputvedant52@gmail.com</p>
-<p><strong>Instagram:</strong> @DragosterStudios</p>
-
-<p><em>Last updated: November 27, 2025</em></p>
+<div class="footer">
+  <strong>Privacy Policy — Indian Ninja Frog: 99% Fail by Dragoster Studios</strong><br>
+  Effective Date: May 13, 2026 &nbsp;·&nbsp; This app does not collect, store, or share any personal data.
+</div>
 
 </body>
 </html>
